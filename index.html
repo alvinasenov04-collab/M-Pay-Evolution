@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-Pay Evolution | Дипломен проект</title>
+    <!-- Зареждане на масивни шрифтове -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="fade-in-page">
+
+    <!-- ГЛАВНА НАВИГАЦИЯ (ИЗЧИСТЕНА) -->
+    <header class="main-header">
+    <div class="container header-flex">
+       <div class="logo">
+    <a href="index.html">
+        <img src="images/logo.png.png" alt="M-Pay Evolution" class="logo-img">
+    </a>
+</div>
+        
+        <ul class="nav-list">
+            <li><a href="index.html">Начало</a></li>
+            
+            <li class="dropdown">
+                <a href="technologies.html" class="dropbtn">Технологии <span class="arrow-icon">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="nfc-details.html">NFC Плащания</a>
+                    <a href="qr-details.html">QR Кодове</a>
+                    <a href="wallets-details.html">Дигитални портфейли</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <!-- Клик върху "Анализ" те праща в charts.html -->
+                <a href="charts.html" class="dropbtn">Анализ <span class="arrow-icon">▼</span></a>
+                <div class="dropdown-content">
+                    <!-- Тук остават само двете чисти опции -->
+                    <a href="stats-details.html">Статистика на растежа</a>
+                    <a href="trends-details.html">Тенденции</a>
+                </div>
+            </li>
+
+            <li><a href="author.html">Автор</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+        </ul>
+    </div>
+</header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-badge">FUTURE OF FINTECH</span>
+                    <h1>Съвременни решения за <br><span class="gradient-text">Мобилни Плащания</span></h1>
+                    <p class="hero-sub">Изследване на иновациите, предизвикателствата и възможностите за развитие в електронната търговия.</p>
+                    
+                    <a href="#about-topic" class="cta-button">
+                        <span>НАУЧЕТЕ ПОВЕЧЕ</span>
+                        <div class="btn-glow"></div>
+                    </a>
+                </div>
+
+                <!-- КЛИКАЩА И МИГАЩА СТРЕЛКА -->
+                <a href="#about-topic" class="scroll-indicator">
+                    <div class="arrow-scroll"></div>
+                </a>
+            </div>
+        </section>
+
+        <section id="about-topic" class="info-section">
+            <div class="container grid-2">
+                <div class="text-box">
+                    <h2 class="stylish-title">Дигитална <br>Трансформация</h2>
+                    <p class="big-description">Този проект анализира ключовите аспекти на мобилната търговия. В ерата на смартфоните, начинът по който обменяме стойност, се променя фундаментално.</p>
+                    <div class="accent-line"></div>
+                    <p class="big-description">От NFC чипове до блокчейн интеграции – разберете как технологиите осигуряват сигурност и удобство за милиони потребители по света.</p>
+                </div>
+                <div class="image-box">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?w=800" alt="Payment Tech">
+                        <div class="img-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 M-Pay Evolution | Дипломен проект на Кристиана Янкова</p>
+        </div>
+    </footer>
+
+    <!-- JS за плавно преминаване (същия като в стария проект) -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.body.classList.add('loaded');
+        });
+
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const target = this.getAttribute('href');
+                if (target && target.includes('.html')) {
+                    e.preventDefault();
+                    document.body.classList.add('fade-out');
+                    setTimeout(() => { window.location.href = target; }, 500);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

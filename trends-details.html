@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Технологични тенденции | M-Pay Evolution</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Chart.js Библиотека -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="fade-in-page">
+
+    <header class="main-header">
+        <div class="container header-flex">
+           <div class="logo">
+    <a href="index.html">
+        <img src="images/logo.png.png" alt="M-Pay Evolution" class="logo-img">
+    </a>
+</div>
+            <ul class="nav-list">
+                <li><a href="index.html">Начало</a></li>
+                <li class="dropdown">
+                    <a href="technologies.html" class="dropbtn">Технологии ▼</a>
+                    <div class="dropdown-content">
+                        <a href="nfc-details.html">NFC Плащания</a>
+                        <a href="qr-details.html">QR Кодове</a>
+                        <a href="wallets-details.html">Дигитални портфейли</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="charts.html" class="active dropbtn">Анализ ▼</a>
+                    <div class="dropdown-content">
+                        <a href="stats-details.html">Статистика на растежа</a>
+                        <a href="trends-details.html">Тенденции</a>
+                    </div>
+                </li>
+                <li><a href="author.html">Автор</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main style="padding-top: 150px;">
+        <div class="container">
+            <a href="charts.html" class="back-link">← ОБРАТНО КЪМ ПОРТАЛА</a>
+
+            <section class="details-hero" style="margin-top: 50px;">
+                <h1 class="compact-title">Бъдещи <span class="gradient-text">Тенденции</span></h1>
+                
+                <div class="grid-2" style="margin-top: 40px; align-items: center;">
+                    <!-- КРЪГОВА ГРАФИКА (JS) -->
+                    <div class="canvas-wrapper" style="background: #0d0d0d; padding: 40px; border-radius: 50%; border: 1px solid #222; position: relative; width: 450px; height: 450px; margin: 0 auto; box-shadow: 0 0 50px rgba(106, 17, 203, 0.2);">
+                        <canvas id="trendsChart"></canvas>
+                    </div>
+
+                    <div class="text-box">
+                        <h3 class="gold-title">Доминиращи технологии</h3>
+                        <p class="big-description">През 2026 г. се очаква пълна доминация на биометричните плащания. Изкуственият интелект (AI) ще анализира трансакциите за милисекунди, за да предотврати измами.</p>
+                        
+                        <div class="trend-item" style="margin-top: 30px; border-left: 4px solid var(--accent-gold); padding-left: 20px;">
+                            <h4 style="color: white; font-weight: 800;">БИОМЕТРИЯ</h4>
+                            <p style="color: #888; font-size: 0.9rem;">Лицево разпознаване и отпечатъци вместо PIN кодове.</p>
+                        </div>
+
+                        <div class="trend-item" style="margin-top: 20px; border-left: 4px solid var(--main-violet); padding-left: 20px;">
+                            <h4 style="color: white; font-weight: 800;">КРИПТО ИНТЕГРАЦИЯ</h4>
+                            <p style="color: #888; font-size: 0.9rem;">Директни плащания с дигитални валути през портфейлите.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- СВЪРЗВАНЕ НА НОВИЯ JS ФАЙЛ -->
+    <script src="js/trends-logic.js"></script>
+
+</body>
+</html>

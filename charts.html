@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анализ и Графики | M-Pay Evolution</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="fade-in-page">
+
+    <header class="main-header">
+    <div class="container header-flex">
+       <div class="logo">
+    <a href="index.html">
+        <img src="images/logo.png.png" alt="M-Pay Evolution" class="logo-img">
+    </a>
+</div>
+        
+        <ul class="nav-list">
+            <li><a href="index.html">Начало</a></li>
+            
+            <li class="dropdown">
+                <a href="technologies.html" class="dropbtn">Технологии <span class="arrow-icon">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="nfc-details.html">NFC Плащания</a>
+                    <a href="qr-details.html">QR Кодове</a>
+                    <a href="wallets-details.html">Дигитални портфейли</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <!-- Клик върху "Анализ" те праща в charts.html -->
+                <a href="charts.html" class="dropbtn">Анализ <span class="arrow-icon">▼</span></a>
+                <div class="dropdown-content">
+                    <!-- Тук остават само двете чисти опции -->
+                    <a href="stats-details.html">Статистика на растежа</a>
+                    <a href="trends-details.html">Тенденции</a>
+                </div>
+            </li>
+
+            <li><a href="author.html">Автор</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+        </ul>
+    </div>
+</header>
+
+    <main style="padding-top: 150px;">
+        <section class="container">
+            <div class="sub-header-center">
+                <span class="hero-badge">Data Analysis Hub</span>
+                <h1 class="compact-title">Анализ и <span class="gradient-text">Графики</span></h1>
+                <p class="mid-description">Изберете категория, за да видите подробно графично представяне на данните.</p>
+            </div>
+            
+            <div class="tech-horizontal-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 900px; margin: 50px auto;">
+                <div class="tech-card-small">
+                    <div class="card-img-small"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600" alt="Stats"></div>
+                    <div class="card-text-small">
+                        <h3>Статистика на растежа</h3>
+                        <p>Визуализация на глобалния обем трансакции и прогноза за 2026 година.</p>
+                        <a href="stats-details.html" class="read-more-btn">ВИЖ ГРАФИКИТЕ →</a>
+                    </div>
+                </div>
+                <div class="tech-card-small">
+                    <div class="card-img-small"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800" alt="Future Trends"></div>
+                    <div class="card-text-small">
+                        <h3>Технологични тенденции</h3>
+                        <p>Разпределение на пазарния дял между водещите методи за мобилни плащания.</p>
+                        <a href="trends-details.html" class="read-more-btn">ВИЖ АНАЛИЗА →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer" style="margin-top: 100px;">
+        <div class="container"><p>&copy; 2026 M-Pay Evolution | Дипломен проект</p></div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистика на растежа | M-Pay Evolution</title>
+    <!-- Шрифтове -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- 1. ЗАРЕЖДАНЕ НА БИБЛИОТЕКАТА ЗА ГРАФИКИ (Chart.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="fade-in-page">
+
+    <!-- НАВИГАЦИЯ -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo">
+    <a href="index.html">
+        <img src="images/logo.png.png" alt="M-Pay Evolution" class="logo-img">
+    </a>
+</div>
+            <ul class="nav-list">
+                <li><a href="index.html">Начало</a></li>
+                <li class="dropdown">
+                    <a href="technologies.html" class="dropbtn">Технологии ▼</a>
+                    <div class="dropdown-content">
+                        <a href="nfc-details.html">NFC Плащания</a>
+                        <a href="qr-details.html">QR Кодове</a>
+                        <a href="wallets-details.html">Дигитални портфейли</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="charts.html" class="active dropbtn">Анализ ▼</a>
+                    <div class="dropdown-content">
+                        <a href="stats-details.html">Статистика на растежа</a>
+                        <a href="trends-details.html">Тенденции</a>
+                    </div>
+                </li>
+                <li><a href="author.html">Автор</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main style="padding-top: 150px;">
+        <div class="container">
+            <a href="charts.html" class="back-link">← ОБРАТНО КЪМ ПОРТАЛА</a>
+
+            <section class="details-hero" style="margin-top: 50px;">
+                <h1 class="compact-title">Обем на <span class="gradient-text">Плащанията</span></h1>
+                
+                <div class="grid-2" style="margin-top: 40px; align-items: flex-start;">
+                    <div class="text-box">
+                        <p class="big-description">Използвайки <strong>JavaScript</strong> за визуализация в реално време, виждаме експоненциалния скок в мобилните трансакции. Тази динамика е задвижвана от доверието на потребителите в новите методи за криптиране.</p>
+                        
+                        <!-- 2. КОНТЕЙНЕР ЗА JS ГРАФИКАТА -->
+                        <div class="canvas-wrapper" style="background: #0d0d0d; padding: 30px; border-radius: 20px; border: 1px solid #222; margin-top: 30px; position: relative; height: 400px; box-shadow: 0 15px 40px rgba(0,0,0,0.5);">
+                            <canvas id="growthChart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="image-box" style="margin-top: 20px;">
+                        <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800" alt="Stats" style="opacity: 0.7;">
+                        <p class="big-description" style="font-size: 1rem; color: var(--accent-gold); margin-top: 20px; border-left: 3px solid var(--main-violet); padding-left: 15px;">
+                            Графиката показва прехода от $1.5 трилиона през 2020 г. до прогнозирани $6.1 трилиона през 2026 г.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 3. ВКЛЮЧВАНЕ НА ТВОЯ СОБСТВЕН JS ФАЙЛ -->
+    <script src="js/chart-logic.js"></script>
+
+</body>
+</html>

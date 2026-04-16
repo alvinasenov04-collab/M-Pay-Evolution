@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автор | Кристиана Янкова</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="fade-in-page">
+
+    <!-- ГЛАВНА НАВИГАЦИЯ -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo">
+    <a href="index.html">
+        <img src="images/logo.png.png" alt="M-Pay Evolution" class="logo-img">
+    </a>
+</div>
+            <ul class="nav-list">
+                <li><a href="index.html">Начало</a></li>
+                <li class="dropdown">
+                    <a href="technologies.html" class="dropbtn">Технологии ▼</a>
+                    <div class="dropdown-content">
+                        <a href="nfc-details.html">NFC Плащания</a>
+                        <a href="qr-details.html">QR Кодове</a>
+                        <a href="wallets-details.html">Дигитални портфейли</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="charts.html" class="dropbtn">Анализ ▼</a>
+                    <div class="dropdown-content">
+                        <a href="stats-details.html">Статистика на растежа</a>
+                        <a href="trends-details.html">Тенденции</a>
+                    </div>
+                </li>
+                <li><a href="author.html" class="active">Автор</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main style="padding-top: 150px;">
+        <div class="container">
+            <!-- СЕКЦИЯ: ПРЕДСТАВЯНЕ -->
+            <section class="grid-2" style="align-items: flex-start; gap: 100px;">
+                <div class="image-box">
+                    <div class="author-frame">
+                        <!-- ТУК ЩЕ СМЕНИШ ЛИНКА СЪС ТВОЯ СНИМКА ПО-КЪСНО -->
+                        <img src="https://via.placeholder.com/500x600" alt="Кристиана Янкова" id="author-img">
+                        <div class="frame-decor"></div>
+                    </div>
+                </div>
+
+                <div class="text-box">
+                    <span class="hero-badge">Developer & Researcher</span>
+                    <h1 class="stylish-title">Кристиана <span class="gradient-text">Янкова</span></h1>
+                    <p class="big-description">Ученичка в СПГИ „Д-р Петър Аладжов“, специалност „Икономическа информатика“.</p>
+                    <p class="big-description" style="font-size: 1.1rem; color: #bbb;">
+                        Този проект е резултат от моето изследване в областта на финтех технологиите и електронната търговия. Фокусирана съм върху разработката на модерни уеб решения, които комбинират естетика с висока функционалност.
+                    </p>
+                    
+                    <div class="author-contacts" style="margin-top: 30px;">
+                        <p style="font-weight: 800; color: var(--accent-gold);">EMAIL: <span style="color: white; font-weight: 500;">krisi7301@gmail.com</span></p>
+                        <p style="font-weight: 800; color: var(--accent-gold);">LOCATION: <span style="color: white; font-weight: 500;">Veliko Tarnovo, BG</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- СЕКЦИЯ: РЕАЛИЗИРАНИ ПРОЕКТИ -->
+            <section style="margin-top: 120px;">
+                <h2 class="gold-title" style="text-align: center; margin-bottom: 50px;">Портфолио Проекти</h2>
+                <div class="tech-horizontal-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 900px; margin: 0 auto;">
+                    
+                    <!-- КАРТА ЗА БРЪСНАРНИЦАТА (С ПРАВИЛЕН ЛИНК) -->
+                    <div class="tech-card-small">
+                        <div class="card-img-small">
+                            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=600" alt="Barber Project">
+                        </div>
+                        <div class="card-text-small">
+                            <h3>Neon Blade Barbershop</h3>
+                            <p>Уебсайт на бръснарница с Мега меню, анимации и мобилна оптимизация.</p>
+                            <!-- ЛИНКЪТ Е ОПРАВЕН ТУК: -->
+                            <a href="https://neon-blade-varna.netlify.app" target="_blank" class="read-more-btn">ВИЖ ПРОЕКТА НА ЖИВО →</a>
+                        </div>
+                    </div>
+
+                    <!-- КАРТА ЗА ТЕКУЩИЯ ПРОЕКТ -->
+                    <div class="tech-card-small">
+                        <div class="card-img-small">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600" alt="M-Pay Project">
+                        </div>
+                        <div class="card-text-small">
+                            <h3>M-Pay Evolution</h3>
+                            <p>Дипломен проект, използващ JavaScript библиотеки за визуализация на данни.</p>
+                            <span class="hero-badge" style="margin: 0; padding: 5px 10px;">CURRENT PROJECT</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- СЕКЦИЯ: ИЗТОЧНИЦИ -->
+            <section style="margin-top: 120px; padding-bottom: 100px;">
+                <h2 class="gold-title" style="border-bottom: 2px solid var(--main-violet); padding-bottom: 15px;">Използвани Източници</h2>
+                <ul class="thick-list" style="margin-top: 30px;">
+                    <li><strong>Chart.js</strong> – Библиотека за интерактивни графики.</li>
+                    <li><strong>Unsplash</strong> – Изображения със свободен лиценз.</li>
+                    <li><strong>Google Fonts</strong> – Типография (Montserrat & Poppins).</li>
+                    <li><strong>Fintech Reports 2024</strong> – Статистически данни.</li>
+                    <li><strong>W3Schools & MDN</strong> – Документация за HTML, CSS и JS.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container"><p>&copy; 2026 M-Pay Evolution | Дипломен проект</p></div>
+    </footer>
+
+</body>
+</html>
