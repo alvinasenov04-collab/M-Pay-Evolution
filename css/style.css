@@ -649,7 +649,7 @@ h1 {
     transition: 0.3s ease;
 }
 
-/* Ефект при посочване - нека е по-дискретен */
+/* Ефект при посочване */
 .logo-img:hover {
     transform: scale(1.4); 
     filter: drop-shadow(0 0 12px var(--accent-gold));
@@ -661,4 +661,25 @@ h1 {
     align-items: center;
     height: 100%;
     overflow: visible; /* Позволява на лекото уголемяване да се вижда */
+}
+
+/* --- СТИЛ ЗА КАРТАТА --- */
+.full-width-map {
+    width: 100%;
+    margin-top: 80px;
+    line-height: 0; /* Премахва бялото разстояние отдолу */
+    border-top: 1px solid #222;
+}
+
+.full-width-map iframe {
+    width: 100%;
+    display: block;
+    /* Тъмният филтър, за да пасне на дизайна */
+    filter: grayscale(100%) invert(92%) contrast(83%);
+    transition: all 0.6s ease;
+}
+
+/* Когато мишката е върху картата - става цветна за удобство */
+.full-width-map iframe:hover {
+    filter: grayscale(0%) invert(0%) contrast(100%);
 }
